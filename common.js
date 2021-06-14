@@ -30,6 +30,8 @@ const RedirectTo = (url, isNewTarget = false) => {
         window.location.href = url
 };
 
+const BuildUrl = (baseUrl, url) => `${baseUrl}${url}`; 
+
 
 
 
