@@ -1,6 +1,9 @@
-let calculoConLisette = document.getElementsByName('CBM208T')[4]
+const autoClick = (classId,position)=>{
+  let classElement = document.getElementsByName(classId)[position]
 let botonSubmit = document.getElementById('btnGuardar')
 setInterval(()=>{
-	calculoConLisette.click();
+window.alert = function() {};
+	classElement.click();
 	botonSubmit.click();
 },500)
+}
